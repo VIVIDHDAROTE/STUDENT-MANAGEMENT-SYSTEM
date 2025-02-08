@@ -2,8 +2,6 @@ package Student_management_system;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.*;
-import java.util.Arrays;
 
 public class StudentMain {
     private static ArrayList<Student> list = new ArrayList<>();
@@ -11,19 +9,19 @@ public class StudentMain {
 
     public static void addStudent() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter Id: ");
+        System.out.print("Enter Id: ");
         int id = s.nextInt();
         s.nextLine();
 
-        System.out.println("Enter Name: ");
+        System.out.print("Enter Name: ");
         String name = s.next();
         s.nextLine();
 
-        System.out.println("Enter Age: ");
+        System.out.print("Enter Age: ");
         int age = s.nextInt();
         s.nextLine();
 
-        System.out.println("Enter City: ");
+        System.out.print("Enter City: ");
         String city = s.next();
         s.nextLine();
 
@@ -44,20 +42,20 @@ public class StudentMain {
 
     public static void updateStudent() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter Id: ");
+        System.out.print("Enter Id: ");
         int id = s.nextInt();
         for (Student student : list) {
             if (student.getId() == id) {
 
-                System.out.println("Enter your name: ");
+                System.out.print("Enter your name: ");
                 String name = s.next();
                 s.nextLine();
 
-                System.out.println("Enter your age:");
+                System.out.print("Enter your age:");
                 int age = s.nextInt();
                 s.nextLine();
 
-                System.out.println("Enter your City: ");
+                System.out.print("Enter your City: ");
                 String city = s.next();
                 s.nextLine();
 
@@ -74,7 +72,7 @@ public class StudentMain {
 
     public static void searchStudent() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter Id: ");
+        System.out.print("Enter Id: ");
         int id = s.nextInt();
         s.nextLine();
 
@@ -96,7 +94,7 @@ public class StudentMain {
 
     public static void deleteStudent() {
         Scanner s = new Scanner(System.in);
-        System.out.println("Enter the Id to delete: ");
+        System.out.print("Enter the Id to delete: ");
         int id = s.nextInt();
         s.nextLine();
         Student studentToRemove = null;
@@ -126,7 +124,7 @@ public class StudentMain {
                 System.out.println("5.Delete Student");
                 System.out.println("6.Exit");
 
-                System.out.println("Enter your Choice: ");
+                System.out.print("Enter your Choice: ");
                 int choice=s.nextInt();
                 switch (choice){
                     case 1:
